@@ -1,0 +1,8 @@
+{
+    "name": "Cloudreve-Heroku",
+	"description": "Deploy Cloudreve on Heroku.",
+	"repository": "https://github.com/FuaerCN/Cloudreve-Heroku",
+	"website": "https://yam.ink",
+	"keywords": ["Cloudreve"],
+	"stack": "container"
+}
