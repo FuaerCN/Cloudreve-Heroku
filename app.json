@@ -1,0 +1,16 @@
+{
+	"name": "Cloudreve-Heroku-HerokuRedis-JawsDBMySQL",
+    "description": "Deploy Cloudreve on Heroku",
+	"keywords": ["Cloudreve"],
+    "repository": "https://github.com/FuaerCN/Cloudreve-Heroku-Redis-Mysql",
+	"website": "https://yam.ink",
+    "stack": "container",
+    "addons": [
+        {
+          "plan": "jawsdb:kitefin"
+        },
+        {
+          "plan": "heroku-redis:hobby-dev"
+        }
+    ]
+}
