@@ -1,5 +1,6 @@
 # Cloudreve-Heroku-Redis-Mysql
-# Heroku 部署：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## Heroku 部署：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## 部署页面按要求填写Mysql数据库信息
 ---
 ## 概述
 ### 用于在 Heroku 上部署 [Cloudreve](https://cloudreve.org/)
