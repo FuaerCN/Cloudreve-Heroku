@@ -1,0 +1,30 @@
+{
+    "name": "Cloudreve-Heroku-Redis-Mysql",
+	"description": "Deploy Cloudreve on Heroku.",
+	"repository": "https://github.com/FuaerCN/Cloudreve-Heroku",
+	"website": "https://yam.ink",
+	"keywords": ["Cloudreve"],
+	"env": {
+		"DB_Host": {
+			"description": "Database Host",
+			"value": "127.0.0.1"
+		},
+		"DB_Port": {
+			"description": "Database Port",
+			"value": "3306"
+		},
+		"DB_User": {
+			"description": "Database User",
+			"value": "DB_User"
+		},
+		"DB_Password": {
+			"description": "Database Password",
+			"value": "DB_Password"
+		},
+		"DB_Name": {
+			"description": "Database Name",
+			"value": "Cloudreve"
+		}
+	},
+	"stack": "container"
+}
