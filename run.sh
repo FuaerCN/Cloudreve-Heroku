@@ -1,5 +1,23 @@
 #!/bin/sh
 
+if [ "$DB_Host" = "HerokuMysql" ]
+	then
+	echo "Heroku Mysql"
+	Host = ${JAWSDB_URL:42:57}
+	Port = ${JAWSDB_URL:101:4}
+	User = ${JAWSDB_URL:8:16}
+	Password = ${JAWSDB_URL:25:16}
+	Name = ${JAWSDB_URL##*/}
+else  
+	echo "Remote MySQL"
+	Host = $DB_Host
+	Port = $DB_Port
+	User = $DB_User
+	Password = $DB_Pwd
+	Name = $DB_Name
+fi
+
+
 cat <<-EOF > /root/cloudreve/conf.ini
 [System]
 ; 运行模式
@@ -22,15 +40,15 @@ DB = 0
 ; 数据库类型，目前支持 sqlite | mysql
 Type = mysql
 ; 数据库地址
-Host = ${JAWSDB_URL:42:57}
+Host = $Host
 ; MySQL 端口
-Port = 3306
+Port = $Port
 ; 用户名
-User = ${JAWSDB_URL:8:16}
+User = $User
 ; 密码
-Password = ${JAWSDB_URL:25:16}
+Password = $Password
 ; 数据库名称
-Name = ${JAWSDB_URL##*/}
+Name = $Name
 ; 数据表前缀
 TablePrefix = V3
 EOF
