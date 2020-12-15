@@ -1,11 +1,33 @@
 {
 	"name": "Cloudreve-Heroku-HerokuRedis-JawsDBMySQL",
-    "description": "Deploy Cloudreve on Heroku",
+	"description": "Deploy Cloudreve on Heroku",
 	"keywords": ["Cloudreve"],
-    "repository": "https://github.com/FuaerCN/Cloudreve-Heroku-Redis-Mysql",
+	"repository": "https://github.com/FuaerCN/Cloudreve-Heroku",
 	"website": "https://yam.ink",
-    "stack": "container",
-    "addons": [
+	"stack": "container",
+	"env": {
+		"DB_Host": {
+			"description": "Database Host",
+			"value": "HerokuMysql"
+		},
+		"DB_Port": {
+			"description": "Database Port",
+			"required": false
+		},
+		"DB_User": {
+			"description": "Database User",
+			"required": false
+		},
+		"DB_Pwd": {
+			"description": "Database Password",
+			"required": false
+		},
+		"DB_Name": {
+			"description": "Database Name",
+			"required": false
+		}
+	},
+	"addons": [
         {
           "plan": "jawsdb:kitefin"
         },
