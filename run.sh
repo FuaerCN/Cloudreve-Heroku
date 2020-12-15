@@ -3,20 +3,19 @@
 if [ "$DB_Host" = "HerokuMysql" ]
 	then
 	echo "Heroku Mysql"
-	Host = ${JAWSDB_URL:42:57}
-	Port = ${JAWSDB_URL:101:4}
-	User = ${JAWSDB_URL:8:16}
-	Password = ${JAWSDB_URL:25:16}
-	Name = ${JAWSDB_URL##*/}
+	Host=${JAWSDB_URL:42:57}
+	Port=${JAWSDB_URL:100:4}
+	User=${JAWSDB_URL:8:16}
+	Password=${JAWSDB_URL:25:16}
+	Name=${JAWSDB_URL##*/}
 else  
 	echo "Remote MySQL"
-	Host = $DB_Host
-	Port = $DB_Port
-	User = $DB_User
-	Password = $DB_Pwd
-	Name = $DB_Name
+	Host=$DB_Host
+	Port=$DB_Port
+	User=$DB_User
+	Password=$DB_Pwd
+	Name=$DB_Name
 fi
-
 
 cat <<-EOF > /root/cloudreve/conf.ini
 [System]
