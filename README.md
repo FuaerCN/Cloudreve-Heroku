@@ -5,7 +5,7 @@
 ## 概述
 ### 用于在 Heroku 上部署 [Cloudreve](https://cloudreve.org/)
 ### 本镜像基于 redis:alpine 默认开启Redis缓存服务
-### Cloudreve版本为 Cloudreve 3.1.1（moeYuiYui世纪互联SP）
+### Cloudreve版本为 Cloudreve SharePoint修改版
 ---
 ## Aria2 账户信息
 ### RPC 服务器地址：http://127.0.0.1:6800/
