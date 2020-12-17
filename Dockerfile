@@ -8,7 +8,7 @@ RUN wget -qO /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sge
 ADD run.sh /root/cloudreve/run.sh
 ADD cloudreve.db /root/cloudreve/cloudreve.db
 
-RUN wget -qO cloudreve.tar.gz https://github.com/cloudreve/Cloudreve/releases/download/3.2.0/cloudreve_3.2.0_linux_amd64.tar.gz \
+RUN wget -qO cloudreve.tar.gz https://yam.ink/cloudreve/cloudreve_linux_amd64.tar.gz \
 	&& tar -zxvf cloudreve.tar.gz -C /root/cloudreve \
 	&& chmod +x /root/cloudreve/cloudreve /root/cloudreve/run.sh
 
