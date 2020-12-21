@@ -1,6 +1,9 @@
 # Cloudreve-Heroku
 # Heroku 部署： [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 ---
+## Cloudreve-Heroku-Redis-Mysql https://github.com/FuaerCN/Cloudreve-Heroku/tree/Redis-Mysql
+## Cloudreve-Heroku-HerokuRedis-JawsDBMySQL https://github.com/FuaerCN/Cloudreve-Heroku/tree/Heroku-Mysql
+---
 ## 概述
 ### 用于在 Heroku 上部署 [Cloudreve](https://cloudreve.org/)
 ### 本镜像基于 redis:alpine
