@@ -1,5 +1,6 @@
 # Cloudreve-Heroku-HerokuRedis-JawsDBMySQL
 ## Heroku 部署：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## 部署页面可按要求填写远程MySQL信息，不做修改则使用JawsDBMySQL
 ---
 ## 分支
 ### Heroku+远程Mysql：[Cloudreve-Heroku-Mysql](https://github.com/FuaerCN/Cloudreve-Heroku)
