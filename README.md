@@ -2,6 +2,11 @@
 ## Heroku 部署：[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 ## 部署页面按要求填写Mysql数据库信息
 ---
+## 分支
+### Heroku+远程Mysql：[Cloudreve-Heroku-Mysql](https://github.com/FuaerCN/Cloudreve-Heroku)
+### Heroku+本地Redis+远程Mysql：[Cloudreve-Heroku-Redis-Mysql](https://github.com/FuaerCN/Cloudreve-Heroku/tree/Redis-Mysql)
+### Heroku+HerokuRedis+JawsDBMySQL：[Cloudreve-Heroku-HerokuRedis-JawsDBMySQL](https://github.com/FuaerCN/Cloudreve-Heroku/tree/Heroku-Mysql)
+---
 ## 概述
 ### 用于在 Heroku 上部署 [Cloudreve](https://cloudreve.org/)
 ### 本镜像基于 redis:alpine 默认开启Redis缓存服务
