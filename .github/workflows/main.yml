@@ -1,9 +1,6 @@
 name: Download Cloudreve To Release
 
 on:
-  push:
-    branches:
-      - main
   watch:
     types: started
 
