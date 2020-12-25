@@ -1,6 +1,12 @@
 name: Download Cloudreve To Release
 
 on:
+ # push:
+   # branches: 
+    #  - main
+ # schedule: 
+   # - cron: 0 12 * * *
+  workflow_dispatch: 
   watch:
     types: started
 
@@ -24,6 +30,24 @@ jobs:
           repo: moeYuiYui/Cloudreve
           match: "cloudreve_sp_.+_linux_amd64.tar.gz$"
           rename: cloudreve_sp_linux_amd64.tar.gz
+
+     # - name: Create Release
+       # uses: tix-factory/release-manager@v1
+       # with:
+         # github_token: ${{ secrets.github_token }}
+         # mode: uploadReleaseAsset
+         # filePath: ./cloudreve_linux_amd64.tar.gz
+         # assetName: cloudreve_linux_amd64.tar.gz
+         # tag: Cloudreve
+
+     # - name: Create Release SharePoint
+       # uses: tix-factory/release-manager@v1
+       # with:
+         # github_token: ${{ secrets.github_token }}
+         # mode: uploadReleaseAsset
+         # filePath: ./cloudreve_sp_linux_amd64.tar.gz
+         # assetName: cloudreve_sp_linux_amd64.tar.gz
+         # tag: Cloudreve
 
       - name: Delete Release Cloudreve
         uses: Xotl/cool-github-releases@v1.1.2
