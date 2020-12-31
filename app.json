@@ -7,7 +7,7 @@
 	"stack": "container",
 	"env": {
 		"HerokuMysql": {
-			"description": "Database Host",
+			"description": "HerokuMysql",
 			"value": "true"
 		},
 		"DB_Host": {
