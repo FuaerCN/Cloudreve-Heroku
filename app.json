@@ -9,6 +9,7 @@
 		"HerokuMysql": {
 			"description": "Database Host",
 			"value": "true"
+		},
 		"DB_Host": {
 			"description": "Database Host",
 			"value": "127.0.0.1"
