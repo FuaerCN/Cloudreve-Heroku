@@ -6,25 +6,28 @@
 	"website": "https://yam.ink",
 	"stack": "container",
 	"env": {
+		"HerokuMysql": {
+			"description": "Database Host",
+			"value": "true"
 		"DB_Host": {
 			"description": "Database Host",
-			"value": "HerokuMysql"
+			"value": "127.0.0.1"
 		},
 		"DB_Port": {
 			"description": "Database Port",
-			"required": false
+			"value": "3306"
 		},
 		"DB_User": {
 			"description": "Database User",
-			"required": false
+			"value": "cloudreve"
 		},
 		"DB_Pwd": {
 			"description": "Database Password",
-			"required": false
+			"value": "cloudreve"
 		},
 		"DB_Name": {
 			"description": "Database Name",
-			"required": false
+			"value": "cloudreve"
 		}
 	},
 	"addons": [
