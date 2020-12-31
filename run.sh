@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$DB_Host" = "HerokuMysql" ]
+if [ "$HerokuMysql" = "true" ]
 	then
 	echo "Heroku Mysql"
 	Host=${JAWSDB_URL:42:57}
