@@ -10,7 +10,7 @@
 ## 概述
 ### 用于在 Heroku 上部署 [Cloudreve](https://cloudreve.org/)
 ### 本镜像基于 alpine:latest
-### Cloudreve版本为 Cloudreve SharePoint修改版
+### Cloudreve版本为 Cloudreve最新版
 ---
 ## Heroku附加组件（Heroku账号需信用卡验证）
 ### Heroku Redis：Redis数据缓存
