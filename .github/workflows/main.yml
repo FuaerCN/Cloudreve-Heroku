@@ -24,13 +24,6 @@ jobs:
           match: "cloudreve_.+_linux_amd64.tar.gz$"
           rename: cloudreve_linux_amd64.tar.gz
 
-      - name: Download cloudreve SharePoint
-        uses: houqp/download-release-assets-action@v1.0.1
-        with:
-          repo: moeYuiYui/Cloudreve
-          match: "cloudreve_sp_.+_linux_amd64.tar.gz$"
-          rename: cloudreve_sp_linux_amd64.tar.gz
-
      # - name: Create Release
        # uses: tix-factory/release-manager@v1
        # with:
@@ -62,5 +55,5 @@ jobs:
           mode: update
           tag_name: Cloudreve
           release_name: "Cloudreve"
-          assets: cloudreve_linux_amd64.tar.gz;cloudreve_sp_linux_amd64.tar.gz;
+          assets: cloudreve_linux_amd64.tar.gz;
           github_token: ${{ github.token }}
