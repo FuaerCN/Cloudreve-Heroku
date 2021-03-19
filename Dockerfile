@@ -8,7 +8,7 @@ RUN wget -qO /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sge
 ADD aria2.conf /root/aria2/aria2.conf
 ADD run.sh /root/cloudreve/run.sh
 
-RUN wget -qO cloudreve.tar.gz https://github.com/FuaerCN/Cloudreve-Heroku/releases/download/Cloudreve/cloudreve_sp_linux_amd64.tar.gz \
+RUN wget -qO cloudreve.tar.gz https://github.com/FuaerCN/Cloudreve-Heroku/releases/download/Cloudreve/cloudreve_linux_amd64.tar.gz \
 	&& tar -zxvf cloudreve.tar.gz -C /root/cloudreve \
 	&& chmod +x /root/cloudreve/cloudreve /root/cloudreve/run.sh
 
